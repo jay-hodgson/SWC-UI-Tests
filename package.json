@@ -1,0 +1,34 @@
+{
+  "name": "swc-ui-tests",
+  "version": "1.0.0",
+  "description": "SWC UI tests (testcafe)",
+  "scripts": {
+    "test:ci": "./node_modules/.bin/testcafe chrome:headless tests/ --concurrency 7",
+    "test:speed": "./node_modules/.bin/testcafe chrome tests/ --speed 0.5",
+    "test:emulate": "./node_modules/.bin/testcafe 'chrome:emulation:width=800;height=600;' tests/",
+    "test:parallel": "./node_modules/.bin/testcafe chrome tests/ --concurrency 7",
+    "test:headless": "./node_modules/.bin/testcafe chrome:headless tests/",
+    "test:debug": "./node_modules/.bin/testcafe chrome tests/ --debug-on-fail",
+    "test:screenshots": "./node_modules/.bin/testcafe chrome tests/ --screenshots-on-fails -s screenshots",
+    "test": "./node_modules/.bin/testcafe chrome tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jay-hodgson/SWC-UI-Tests.git"
+  },
+  "keywords": [
+    "Sage Bionetworks",
+    "Synapse",
+    "UI test",
+    "testcafe"
+  ],
+  "author": "Jay Hodgson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jay-hodgson/SWC-UI-Tests/issues"
+  },
+  "homepage": "https://github.com/jay-hodgson/SWC-UI-Tests#readme",
+  "dependencies": {
+    "testcafe": "^0.20.3"
+  }
+}
