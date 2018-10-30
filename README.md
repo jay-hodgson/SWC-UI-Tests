@@ -9,3 +9,4 @@ $ testcafe safari tests/
 $ testcafe all tests/
 ```
 
+Project uses [TestCafe](https://devexpress.github.io/testcafe).  See [TestCafe documentation](https://devexpress.github.io/testcafe/documentation/) for more information.
